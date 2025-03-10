@@ -1,0 +1,321 @@
+@font-face {
+      font-family: 'Buvera';
+      src: url(/tongkrongan-it/font/Buvera-Regular.ttf);
+}
+
+@font-face {
+      font-family: 'Buvera-medium';
+      src: url(/tongkrongan-it/font/Buvera-Medium.ttf);
+}
+
+@font-face {
+      font-family: 'Buvera-bold';
+      src: url(/tongkrongan-it/font/Buvera-Bold.ttf);
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+}
+
+body {
+      width: 100%;
+      min-height: 100%;
+      font-family: 'Buvera', sans-serif;
+      background-color: #111927;
+      background-image:
+            radial-gradient(at 47% 33%, hsl(274.48, 72%, 11%) 0, transparent 59%),
+            radial-gradient(at 82% 65%, hsl(259.53, 100%, 50%) 0, transparent 55%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: bgAnimation 5s ease infinite;
+}
+
+
+.home {
+      padding-top: 12vh;
+      padding-bottom: 5vh;
+      width: 100%;
+      transform: translateY(100px);
+      animation: slideUp 1s forwards;
+}
+
+h1.black {
+      text-align: center;
+      font-size: 5em;
+      animation: slideUp 1.5s ease;
+}
+
+h1.black span {
+      background-image: linear-gradient(to left, #ffffff, #621de1, #868cff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+}
+
+p {
+      text-align: center;
+      font-family: 'Buvera', sans-serif;
+      padding: 0 200px 40px;
+      font-size: 1.2em;
+      color: #91A3B0;
+      animation: slideUp 1.5s ease;
+}
+
+.contain-img {
+      place-items: center;
+      justify-content: center;
+      gap: 45px;
+      display: flex;
+      animation: slideUp 1.5s ease;
+}
+
+.gambar{
+      width: 8%;
+}
+
+img {
+      width: 100%;
+}
+
+.among-us{
+      /* From Uiverse.io by barisdogansutcu */ 
+      left: 45%;
+      width: 150px;
+      text-decoration: none;
+      display: grid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 10px;
+      color: white;
+      text-shadow: 2px 2px rgb(116, 116, 116);
+      text-transform: uppercase;
+      cursor: pointer;
+      border: solid 2px black;
+      letter-spacing: 1px;
+      font-weight: 600;
+      font-size: 17px;
+      background-color: hsl(49deg 98% 60%);
+      border-radius: 50px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      margin-bottom: 5vh;
+
+    }
+    
+    .among-us:active {
+      transform: scale(0.9);
+      transition: all 100ms ease;
+    }
+    
+    .among-us svg {
+      transition: all 0.5s ease;
+      z-index: 2;
+    }
+    
+    .play {
+      transition: all 0.5s ease;
+      transition-delay: 300ms;
+    }
+    
+    .among-us:hover svg {
+      transform: scale(3) translate(50%);
+    }
+    
+    .now {
+      position: absolute;
+      left: 0;
+      transform: translateX(-100%);
+      transition: all 0.5s ease;
+      z-index: 2;
+    }
+    
+    .among-us:hover .now {
+      transform: translateX(10px);
+      transition-delay: 300ms;
+    }
+    
+    .among-us:hover .play {
+      transform: translateX(200%);
+      transition-delay: 300ms;
+    }
+
+
+@keyframes bgAnimation {
+      0% {
+            background-color: #111927;
+            background-image:
+                  radial-gradient(at 47% 33%, hsl(274.48, 72%, 11%) 0, transparent 59%),
+                  radial-gradient(at 82% 65%, hsl(259.53, 100%, 50%) 0, transparent 55%);
+      }
+
+      5% {
+            background-color: #111927;
+            background-image:
+                  radial-gradient(at 47% 33%, hsl(274.48, 72%, 11%) 0, transparent 59%),
+                  radial-gradient(at 82% 65%, hsl(259.53, 100%, 50%) 0, transparent 55%);
+      }
+
+      100% {
+            background-color: #111927;
+            background-image:
+                  radial-gradient(at 47% 33%, hsl(274.48, 72%, 11%) 0, transparent 59%),
+                  radial-gradient(at 82% 65%, hsl(259.53, 100%, 50%) 0, transparent 55%);
+      }
+}
+
+.container {
+      backdrop-filter: blur(20px) saturate(164%);
+      -webkit-backdrop-filter: blur(20px) saturate(164%);
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      box-shadow: 5px 29px 78px 55px rgba(30, 0, 113, 0.74);
+      padding: 40px;
+      text-align: center;
+      margin: 20vh;
+      width: 90%;
+      transform: translateY(100px);
+      animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+      from {
+            transform: translateY(100px);
+            opacity: 0;
+      }
+
+      to {
+            transform: translateY(0);
+            opacity: 1;
+      }
+}
+
+h1 {
+      font-family: 'Buvera', sans-serif;
+      margin-bottom: 20px;
+      color: rgb(255, 255, 255);
+      font-size: 2.4em;
+      animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+      0% {
+            opacity: 0;
+      }
+
+      100% {
+            opacity: 1;
+      }
+}
+
+input {
+      padding: 12px;
+      margin-bottom: 30px;
+      width: 80%;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-family: 'Buvera', sans-serif;
+      transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+      border-color: rgb(255, 255, 255);
+      outline: none;
+      box-shadow: 0 0 10px rgba(45, 51, 107, 0.5);
+}
+
+.start {
+      padding: 13px 20px;
+      margin-left: 5px;
+      margin-bottom: 30px;
+      background-color: #ed430a;
+      color: white;
+      border-radius: 8px;
+      font-family: 'Buvera', sans-serif;
+      border: 2px solid #ddd;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+}
+
+.start:hover {
+      background-color: #fe9c1d;
+      transform: scale(1.1);
+}
+
+#tabelHasil {
+      width: 80%;
+      margin-left: 50px;
+      margin-top: 20px;
+      border-collapse: collapse;
+      animation: fadeInTable 1s ease;
+      font-family: 'Buvera', sans-serif;
+      max-height: 300px;
+      overflow-y: auto;
+      overflow: hidden;
+      display: block;
+}
+
+#tabelHasil thead,
+#tabelHasil tbody {
+      max-height: 200px;
+      overflow-y: auto;
+}
+
+#tabelHasil th,
+#tabelHasil tbody {
+      padding: 12px;
+      text-align: left;
+      width: 33%;
+}
+
+#tabelHasil th {
+      background-color: #16166B;
+      border: 1px white solid;
+      padding: 10px 30px 10px 30px;
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Buvera', sans-serif;
+      color: white;
+}
+
+#tabelHasil tbody tr:nth-child(even) {
+      background-color: transparent;
+}
+
+#tabelHasil tbody tr:hover {
+      background-color: transparent;
+}
+
+#tabelHasil tbody td {
+      color: white;
+      padding-left: 20px;
+}
+
+
+
+.hapusBtn {
+      background-color: #ff3333;
+      width: 175px;
+      height: 35px;
+      font-size: 0.9em;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin: 20px 80px 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+}
+
+.hapusBtn:hover {
+      background-color: rgb(0, 0, 0);
+}
