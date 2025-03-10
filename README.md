@@ -13,13 +13,13 @@
 - **Delete Data**: Each result can be deleted with the button provided.
 
 ## Technology Used
-- HTML**: Basic structure of web pages.
+- **HTML**: Basic structure of web pages.
 - **CSS**: Styling for an attractive look.
 - **JavaScript**: Logic to process names and display properties.
 
 ## How to Run
 1. **Download or Clone Repo**:
-   ``sh
+   ```sh
    git clone https://github.com/walkintotheheaven/guess-your-nature.git
    ```
 2. **Open `index.html` File Directly**
